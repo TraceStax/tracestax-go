@@ -1,0 +1,9 @@
+FROM golang:1.23-alpine
+
+WORKDIR /sdk
+
+COPY go.mod go.sum* ./
+COPY *.go ./
+RUN go mod tidy && go mod download
+
+CMD ["go", "test", "-v", "./..."]
