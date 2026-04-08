@@ -1,6 +1,6 @@
 # tracestax-go
 
-Go SDK for [TraceStax](https://tracestax.com) — automatic job-queue monitoring for
+Go SDK for [TraceStax](https://tracestax.com) - automatic job-queue monitoring for
 **Asynq** and **River**.
 
 ## Installation
@@ -54,7 +54,7 @@ func main() {
 
     mux := asynq.NewServeMux()
 
-    // Install TraceStax middleware — wraps every handler registered on this mux.
+    // Install TraceStax middleware - wraps every handler registered on this mux.
     mux.Use(tracestax.NewAsynqMiddleware(rw))
 
     // Register your task handlers as normal.
@@ -200,4 +200,4 @@ On failure an `error` object is added:
 
 ## License
 
-Apache 2.0 — see [LICENSE](../../LICENSE).
+Apache 2.0 - see [LICENSE](../../LICENSE).
