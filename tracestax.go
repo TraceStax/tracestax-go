@@ -21,7 +21,7 @@ import (
 )
 
 const (
-	sdkVersion      = "0.1.0"
+	sdkVersion      = "0.2.0"
 	defaultEndpoint = "https://ingest.tracestax.com"
 	channelBuffer   = 10_000
 
