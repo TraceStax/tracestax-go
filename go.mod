@@ -4,7 +4,7 @@ go 1.25.0
 
 require (
 	github.com/hibiken/asynq v0.26.0
-	github.com/riverqueue/river/rivertype v0.34.0
+	github.com/riverqueue/river/rivertype v0.35.0
 )
 
 require (
